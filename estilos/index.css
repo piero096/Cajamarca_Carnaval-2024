@@ -1,0 +1,220 @@
+:root{
+    /* Colors */
+    --color-primario: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body{
+    background: rgb(212,111,52);
+    background: radial-gradient(circle, rgba(212,111,52,1) 0%, rgba(80,32,90,1) 54%);   
+}
+
+/* ---------------------------------------------------- */
+.home{
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-image: url(../media/confeti.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.home nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    background: #230443;
+}
+
+.home .titulo{
+    width: 150px;
+    height: 20px;
+    background-image: url(../media/logo-Cajamarca.svg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.home nav ul{
+    display: none;
+    text-align: center;
+    list-style: none;
+}
+
+.home nav ul li a{
+    text-decoration:  none;
+    color: var(--color-primario);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 180px;
+}
+
+.carnaval{
+    margin-top: 60px;
+    width: 230px;
+    height: 100px;
+}
+
+.container-card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.container-card .card{
+    width: 50%;
+    max-width: 160px;
+    height: 190px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px;
+}
+
+.container-card .card .hours{
+    padding-top: 15px;
+    font-size: 9.0rem;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    color: #f4f4f4;
+}
+
+.container-card .card .tiempo{
+    padding-top: 15px;
+    font-size: 2.0rem;
+    text-align: center; 
+    background-color: #f4f4f4;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 30%;
+}
+
+.carnaval-año{
+    width: 150px;
+    height: 80px;
+}
+
+
+/* ---------------------querys----------- */
+@media (min-width: 440px) {
+   
+    .carnaval{
+        margin-top: 60px;
+        width: 300px;
+        height: 180px;
+    }
+    .carnaval-año{
+        width: 150px;
+        height: 80px;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    
+}
+
+
+
+@media (min-width: 640px) {
+    .home nav ul{
+        font-size: 1.8rem;
+        display: flex;
+        text-align: center;
+        list-style: none;
+        column-gap: 30px;
+    }
+    .carnaval{
+        margin-top: 60px;
+        width: 430px;
+        height: 200px;
+    }
+    .carnaval-año{
+        width: 150px;
+        height: 80px;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+    
+}
+
+@media (min-width: 1080px) {
+    .home nav ul{
+        font-size: 1.8rem;
+        display: flex;
+        text-align: center;
+        list-style: none;
+        column-gap: 30px;
+    }
+    .carnaval{
+        margin-top: 60px;
+        width: 630px;
+        height: 400px;
+    }
+    .carnaval-año{
+        width: 250px;
+        height: 120px;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 760px) {
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+    }
+}
