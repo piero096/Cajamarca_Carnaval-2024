@@ -86,7 +86,7 @@ body{
     justify-content: center;
     align-items: center;
     row-gap: 20px;
-    column-gap: 160px;
+    column-gap: 40px;
     flex-wrap: wrap;
 }
 
